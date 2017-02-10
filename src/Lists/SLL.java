@@ -1,9 +1,8 @@
 package Lists;
 
-//import Interfaces.SLL_Nodes;
 import Interfaces.SinglyLinkedList;
 
-public abstract class SLL<E> implements SinglyLinkedList<E> {
+public class SLL<E> implements SinglyLinkedList<E> {
 	
 	private int listSize = 0;
 	private Node<E> head = null;
@@ -34,7 +33,7 @@ public abstract class SLL<E> implements SinglyLinkedList<E> {
 	}
 
 	@Override
-	public E Last() {
+	public E last() {
 		if(isEmpty())
 			return null;
 		
@@ -98,11 +97,6 @@ public abstract class SLL<E> implements SinglyLinkedList<E> {
 			this.element = e;
 			this.next = n;
 		}
-		
-//		public Node() {
-//			element = null;
-//			next = null;
-//		}
 
 		public Node(E element) {
 			this(element, null);

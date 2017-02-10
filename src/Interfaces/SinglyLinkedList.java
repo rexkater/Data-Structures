@@ -8,6 +8,6 @@ public interface SinglyLinkedList<E> {
 	void addLast(E e);
 	E removeFirst();
 	E first();
-	E Last();
+	E last();
 
 }
