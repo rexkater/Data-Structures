@@ -62,6 +62,7 @@ public class DLL<E> implements DoublyLinkedList<E> {
 		header.getNext().getNext().setPrev(header);
 		header.setNext(header.getNext().getNext());
 		header.getNext().clearNode();
+		size--;
 		return element;
 	}
 
@@ -73,6 +74,7 @@ public class DLL<E> implements DoublyLinkedList<E> {
 		trailer.getPrev().getPrev().setNext(trailer);
 		trailer.setPrev(trailer.getPrev().getPrev());
 		trailer.getPrev().clearNode();
+		size--;
 		return element;
 	}
 	
