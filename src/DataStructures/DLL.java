@@ -1,4 +1,4 @@
-package Lists;
+package DataStructures;
 import Interfaces.DoublyLinkedList;
 
 public class DLL<E> implements DoublyLinkedList<E> {

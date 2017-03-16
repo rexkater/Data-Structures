@@ -1,7 +1,8 @@
 package Tests;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import Lists.DLL;
+
+import DataStructures.DLL;
 
 public class DLLTester {
 	

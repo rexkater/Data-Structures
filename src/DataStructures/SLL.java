@@ -1,4 +1,4 @@
-package Lists;
+package DataStructures;
 
 import Interfaces.SinglyLinkedList;
 
