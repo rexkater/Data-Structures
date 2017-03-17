@@ -8,6 +8,7 @@ public class LinkedPositionalListTester {
 	LinkedPositionalList<Integer> a = new LinkedPositionalList<Integer>();
 	LinkedPositionalList<Integer> b = new LinkedPositionalList<Integer>();
 	LinkedPositionalList<Integer> c = new LinkedPositionalList<Integer>();
+	LinkedPositionalList<Integer> d = new LinkedPositionalList<Integer>();
 	
 	@Test
 	public void addMethodsTester() {
@@ -71,7 +72,6 @@ public class LinkedPositionalListTester {
 		front = c.first().getElement();
 		assertEquals(front, 9);
 		assertEquals(c.size(), 1);
-		
 		
 	}
 

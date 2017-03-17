@@ -31,6 +31,8 @@ public class QueueByStacks<E> implements Queue<E> {
 		return front;
 	}
 
+	// Ugly Big O' of squared n run time.
+	
 	@Override
 	public E dequeue() throws EmptyQueueException {
 		

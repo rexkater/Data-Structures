@@ -8,8 +8,8 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
 	private int size;
 	
 	public LinkedPositionalList(){
-		header = new DNode<E>(null, null, null);
-		trailer = new DNode<E>(null, header, null);
+		header = new DNode<E>(null, null, null, null);
+		trailer = new DNode<E>(null, header, null, null);
 		header.setNext(trailer);
 		size = 0;
 	}
@@ -63,7 +63,7 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
 	}
 	
 	private Position<E> addBetween(E e, DNode<E> pred, DNode<E> succ){
-		DNode<E> newest = new DNode<>(e, pred, succ);
+		DNode<E> newest = new DNode<>(e, pred, succ, null);
 		pred.setNext(newest);
 		succ.setPrev(newest);
 		size++;
@@ -123,7 +123,7 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
 			this.element = element;
 		}
 		
-		public DNode(E element, DNode<E> prev, DNode<E> next){
+		public DNode(E element, DNode<E> prev, DNode<E> next, LinkedPositionalList<E> list){
 			this(element);
 			this.prev = prev;
 			this.next = next;
